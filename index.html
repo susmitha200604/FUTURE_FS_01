@@ -73,11 +73,20 @@
 <section id="contact">
     <h2>Contact</h2>
 
-    <input type="text" placeholder="Your Name"><br>
-    <input type="email" placeholder="Your Email"><br>
-    <textarea placeholder="Message"></textarea><br>
+    <form action="https://formsubmit.co/susmithsmadhulika04@gmail.com" method="POST">
 
-    <button onclick="sendMessage()">Send Message</button>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+
+        <input type="email" name="email" placeholder="Your Email" required><br>
+
+        <textarea name="message" placeholder="Message" required></textarea><br>
+
+        <!-- Optional (better UX) -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send Message</button>
+
+    </form>
 </section>
 
 <footer>
